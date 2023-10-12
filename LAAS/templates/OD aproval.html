@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="/images/licet.png" type="image/png">
+    <title>OD Approval</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: #105bd486;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 50%;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: #020202;
+            margin-top: 100px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            text-align: left; 
+            display: block; 
+            margin-bottom: 5px; 
+        }
+
+        input[type="text"],
+        select {
+            width: 100%; 
+            padding: 5px; 
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .sidebar {
+            width: 100%;
+            height: 80px;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+        ul li img{
+            width: 35px;
+            height: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><img src="/images/licet.png" alt="logo"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="OD aproval.html">Approval</a></li>
+            <li><a href="Stats.html">Statistics</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    </style>
+</head>
+<body>
+        
+    <div class="container">
+        <h1><Label>Application</Label></h1>
+    
+            <label for="employee_name">Student Name:</label>
+            <input type="text" id="employee_name" name="employee_name" required>
+            
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+            
+            <label for="leave_type">Request for:</label>
+            <select id="leave_type" name="leave_type" required>
+                <option value="OD">OD (on-duty)</option>
+                <option value="leave">Leave</option>
+            </select>
+            
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+            
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+            
+            <label for="reason">Reason:</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
